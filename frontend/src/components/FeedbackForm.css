@@ -1,0 +1,127 @@
+/* ✅ Feedback Form Container */
+.feedback-form-container {
+    max-width: 500px;
+    margin: 50px auto; /* ✅ Add more spacing */
+    padding: 25px;
+    background: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* ✅ Form Layout */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%; /* ✅ Ensure proper width */
+}
+
+/* ✅ Input Group (For Name & Email) */
+.input-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+/* ✅ Input Fields */
+input, textarea {
+    flex: 1;
+    width: 100%; /* ✅ Ensure inputs take full width */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+}
+
+/* ✅ Ensure Input Fields and Textarea Align */
+textarea {
+    width: calc(100% - 24px); /* ✅ Adjusted width to match input fields */
+    min-height: 100px;
+    resize: none; /* ✅ Disable textarea resizing */
+}
+
+/* ✅ Input Focus */
+input:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+/* ✅ Submit Button */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 100%; /* ✅ Button matches input width */
+    max-width: 200px; /* ✅ Prevent too wide button */
+}
+
+button:hover {
+    background: darkblue;
+}
+
+/* ✅ Dark Mode Form */
+.dark-mode .feedback-form-container {
+    background: #1e1e1e;
+    color: white;
+}
+
+/* ✅ Dark Mode Inputs */
+.dark-mode input, 
+.dark-mode textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* ✅ Dark Mode Placeholder */
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+    color: #aaa;
+}
+
+/* ✅ Success Message */
+.success-message {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInOut 2s ease-in-out;
+}
+
+/* ✅ Success Animation */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: scale(0.9); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.9); }
+}
+
+/* ✅ Error Messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.dark-mode .error-message {
+    color: #ff7777;
+}
+
+/* ✅ Disabled Button */
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.dark-mode button:disabled {
+    background: #555;
+}
