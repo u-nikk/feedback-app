@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css"; // ✅ Import Navbar styles
+import "./Navbar.css";
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
