@@ -1,4 +1,4 @@
-/* ✅ Navbar - Fixed at Top */
+/*  Navbar - Fixed at Top */
 .navbar {
     position: fixed;
     top: 0;
@@ -9,19 +9,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* ✅ Adjusted padding */
+    padding: 10px 20px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
   
-/* ✅ App Name (Left Side) */
+/*  App Name (Left Side) */
 .app-name {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
 }
   
-/* ✅ Toggle Button (Right Side) */
+/*  Toggle Button (Right Side) */
 .toggle-btn {
     padding: 8px 12px;
     font-size: 14px;
@@ -36,16 +36,16 @@
     align-items: center;
     gap: 8px;
     position: absolute;
-    right: 45px; /* ✅ Push button inside navbar */
+    right: 45px; 
     justify-content: center;
 }
   
-/* ✅ Button Hover */
+/* Button Hover */
 .toggle-btn:hover {
     background: #7b5dcb;
 }
   
-/* ✅ Dark Mode Navbar */
+/*  Dark Mode Navbar */
 .dark-mode.navbar {
     background: #222;
 }
@@ -62,7 +62,7 @@
     background: #0088cc;
 }
 
-/* ✅ Responsive Fix for Max-Width 480px */
+/* Responsive Fix for Max-Width 480px */
 @media (max-width: 480px) {
     .navbar {
         padding: 8px 15px;
@@ -74,23 +74,23 @@
   
     .toggle-btn {
         font-size: 12px;
-        padding: 6px 10px; /* ✅ Reduce padding for small screens */
+        padding: 6px 10px; 
     }
 }
 
-/* ✅ Extra Fix for Max-Width 350px */
+/* Extra Fix for Max-Width 350px */
 @media (max-width: 350px) {
     .navbar {
-        padding: 8px 10px; /* ✅ Reduce padding further */
+        padding: 8px 10px; 
     }
 
     .app-name {
-        font-size: 14px; /* ✅ Reduce font size */
+        font-size: 14px; 
     }
 
     .toggle-btn {
-        font-size: 11px; /* ✅ Reduce button text */
-        padding: 5px 8px; /* ✅ Make button smaller */
-        right: 15px; /* ✅ Adjust button position */
+        font-size: 11px; 
+        padding: 5px 8px;
+        right: 15px; 
     }
 }
