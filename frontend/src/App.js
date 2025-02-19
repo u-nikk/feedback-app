@@ -23,7 +23,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("https://feedback-app-backend-ynec.onrender.com")
+    fetch("https://feedback-app-backend-ynec.onrender.com/feedback")
       .then((response) => response.json())
       .then((data) => setFeedbacks(data))
       .catch((error) => console.error("Error fetching feedback:", error));
