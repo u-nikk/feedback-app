@@ -15,7 +15,7 @@ const FeedbackForm = ({ onFeedbackSubmit }) => {
     const feedback = { name, email, message };
 
     try {
-      const response = await fetch("https://feedback-app-backend-ynec.onrender.com", {
+      const response = await fetch("https://feedback-app-backend-ynec.onrender.com/feedback", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
