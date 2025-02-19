@@ -7,7 +7,7 @@ function App() {
   const [feedbacks, setFeedbacks] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
   const [showAll, setShowAll] = useState(false);
-  const [expandedFeedback, setExpandedFeedback] = useState({}); // ✅ Track expanded messages
+  const [expandedFeedback, setExpandedFeedback] = useState({}); // Track expanded messages
 
   useEffect(() => {
     const savedMode = JSON.parse(localStorage.getItem("darkMode"));
@@ -33,7 +33,7 @@ function App() {
     setFeedbacks([newFeedback, ...feedbacks]);
   };
 
-  // ✅ Toggle Read More/Read Less
+  //  Toggle Read More/Read Less
   const toggleReadMore = (index) => {
     setExpandedFeedback((prev) => ({
       ...prev,
