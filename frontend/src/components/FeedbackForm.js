@@ -26,7 +26,7 @@ const FeedbackForm = ({ onFeedbackSubmit }) => {
       const data = await response.json();
 
       if (onFeedbackSubmit) {
-        onFeedbackSubmit(data); // ✅ Call function only if it exists
+        onFeedbackSubmit(data); //  Call function only if it exists
       }
 
       setSuccess(true);
